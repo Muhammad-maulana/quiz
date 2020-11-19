@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html" class="active">Home</a>
+  <a href="materi.html">Materi Sekarang</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="#about">About me</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="table-input" style="padding: 10px;">
+  
+<h2>membuat table input dan logika javascript</h2>
+  <table>
+      <tr>
+          <td>Nama</td>
+          <td>: </td>
+          <td> <input type="text" name="" id=""></td>
+      </tr>
+      <tr>
+          <td>Password </td>
+          <td>: </td>
+          <td> <input type="password" name="" id=""></td>
+      </tr>
+      <tr>
+          <td>Number</td>
+          <td>: </td>
+          <td> <input type="number" name="" id=""></td>
+      </tr>
+      <tr>
+          <td>File </td>
+          <td>: </td>
+          <td> <input type="file" name="" id=""></td>
+      </tr>
+      <tr>
+          <td>File </td>
+          <td>: </td>
+          <td> <input type="date" name="" id=""></td>
+      </tr>
+  </table>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

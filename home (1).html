@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html" class="active">Home</a>
+  <a href="materi.html">Materi Sekarang</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="#about">About me</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Hello There</h2>
+  <p>Kesimpulan Materi Sekarang</p>
+  <ul>
+      <li> membuat </li>
+      <li> membuat </li>
+      <li> membuat </li>
+  </ul>
+</div>
+
+<div style="padding-left:16px">
+    <h2>My Contact</h2>
+   <ul>
+       <li>Name: example</li>
+       <li>Email : example@gmail.com</li>
+   </ul>
+  </div>
+  
+  <div style="padding-left:16px">
+    <h2>About Me</h2>
+    <p>story telling about me </p>
+    <p>--</p>
+  </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

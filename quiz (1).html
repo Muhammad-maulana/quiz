@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html" class="active">Home</a>
+  <a href="materi.html">Materi Sekarang</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="#about">About me</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="table-input" style="padding: 10px;">
+  
+
+<h2>Menghitung Luas Segitiga</h2>
+<table>
+  <tr>
+    <td>Alas</td>
+    <td>:</td>
+    <td><input type="text" name="" id="alasSegitiga"></td>
+  </tr>
+  <tr>
+    <td>Tinggi</td>
+    <td>:</td>
+    <td><input type="text" name="" id="tinggiSegitiga"></td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td><input type="button" value="Hitung" onclick="hitung()"></td>
+  </tr>
+  <tr>
+    <td>Hasl</td>
+    <td> : </td>
+    <td><p id="hasil"></p></td>
+</tr>
+</table>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+    function hitung(){
+      let alas =  document.getElementById('alasSegitiga').value;
+      let tinggi =  document.getElementById('tinggiSegitiga').value;
+      
+      let hasil =  alas * tinggi / 2;
+      document.getElementById('hasil').innerHTML = 'Luas Segitiga '+hasil;
+    }
+</script>
+
+<h3>Menghitung Luas Persegi</h3>
+<table>
+  <tr>
+    <td>Panjang</td>
+    <td>:</td>
+    <td><input type="text" name="" id="panjangPersegi"></td>
+  </tr>
+  <tr>
+    <td>Lebar</td>
+    <td>:</td>
+    <td><input type="text" name="" id="lebarPersegi"></td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td><input type="button" value="Hitung" onclick="hitungpersegi()"></td>
+  </tr>
+  <tr>
+    <td>Hasl</td>
+    <td> : </td>
+    <td><p id="hasil2"></p></td>
+</tr>
+</table>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+    function hitungpersegi(){
+      let panjang =  document.getElementById('panjangPersegi').value;
+      let lebar =  document.getElementById('lebarPersegi').value;
+      
+      let hasil =  panjang * lebar / 2;
+      document.getElementById('hasil2').innerHTML = 'Luas Persegi '+hasil;
+    }
+</script>
+
+<h4>Menghitung Luas Jajargenjang</h4>
+<table>
+  <tr>
+    <td>Alas</td>
+    <td>:</td>
+    <td><input type="text" name="" id="alasJajargenjang"></td>
+  </tr>
+  <tr>
+    <td>Tinggi</td>
+    <td>:</td>
+    <td><input type="text" name="" id="tinggiJajargenjang"></td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td><input type="button" value="Hitung" onclick="hitungJajargenjang()"></td>
+  </tr>
+  <tr>
+    <td>Hasl</td>
+    <td> : </td>
+    <td><p id="hasil3"></p></td>
+</tr>
+</table>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+    function hitungJajargenjang(){
+      let alas =  document.getElementById('alasJajargenjang').value;
+      let tinggi =  document.getElementById('tinggiJajargenjang').value;
+      
+      let hasil =  alas * tinggi / 2;
+      document.getElementById('hasil3').innerHTML = 'Luas Jajargenjang '+hasil;
+    }
+</script>
+
+</body>
+</html>
